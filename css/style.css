@@ -489,3 +489,35 @@ select#depthSel{width:100%}
 .foot{text-align:center;font-size:12px;color:var(--muted);margin-top:22px}
 
 @media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}}
+
+/* CHESSMATE_PIECE_BADGE_CIRCLE_FIX_V3 */
+#board .sq .badge.image-badge {
+  width: 30px !important;
+  height: 30px !important;
+  top: 1px !important;
+  right: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  clip-path: circle(50%) !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,.35) !important;
+  background: transparent !important;
+  line-height: 0 !important;
+}
+
+#board .sq .badge.image-badge img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 50% !important;
+  clip-path: circle(50%) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* END CHESSMATE_PIECE_BADGE_CIRCLE_FIX_V3 */
